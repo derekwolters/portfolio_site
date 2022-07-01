@@ -1,6 +1,5 @@
 import { React } from 'react'
 import styled from 'styled-components'
-// import logo from './logo.svg';
 
 let imageMap = {
   meridityImage: {
@@ -15,7 +14,7 @@ const StyledContainer = styled.div`
   border: ${(props) => `1px solid green`};
   padding: 25px 12px 18px;
   background: ${(props) => `linear-gradient(
-    45deg, black, green
+    45deg, #32cd32 , #F5F5F5
   )`};
   width: 300px;
   height: 450px;
@@ -61,7 +60,8 @@ const Card = ({
   title,
   description,
   url,
-  pic,
+  image,
+  alt,
   comments,
   likes,
   views,
@@ -69,7 +69,8 @@ const Card = ({
 }) => (
   <StyledContainer>
     <StyledPhoto
-      src={imageMap[pic].src}
+      src={imageMap[image].src}
+      alt={alt}
     />
     <Title>
       <StyledLink

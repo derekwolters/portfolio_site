@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './site_images/meridity_logo.png';
 import './App.css';
 import { Draggable } from 'drag-react';
 import Card from './card';
@@ -48,7 +48,8 @@ function App() {
                   title={project.name}
                   description={project.description}
                   url={project.url}
-                  pic={project.pic}
+                  image={project.image}
+                  alt={project.alt}
                 />
               </Draggable>
             )
