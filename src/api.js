@@ -9,14 +9,16 @@ let projects = {
     name: 'Company Website',
     description: 'My company website',
     url: 'https://www.meridity.com',
-    pic: 'meridityImage',
+    image: 'meridityImage',
+    alt: "Image of Meridity website",
   },
   idTwo: {
     id: idTwo,
     name: 'Gaming Handheld List 1',
     description: 'Handheld gaming consoles list',
     url: 'https://handheldspecs.netlify.app/',
-    pic: 'handheldSpecs1Image',
+    image: 'handheldSpecs1Image',
+    alt: "Image of first handheld spec website",
   }
 }
 
