@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 import {ImageMap} from './data/imageMap'
 
-/* const imageMap = new Map<string, string> ([
-  ["meridityImage", require("./site_images/meridity.png")],
-  ["handheldSpecs1Image", require("./site_images/handheld_specs_1.png")]
-]) */
-
 const StyledContainer = styled.div`
   border: ${(props) => `1px solid green`};
   padding: 25px 12px 18px;
@@ -14,6 +9,7 @@ const StyledContainer = styled.div`
   )`};
   width: 300px;
   height: 450px;
+  margin: 20px;
 `
 const Title = styled.h2`
   color: #fff;
@@ -52,35 +48,29 @@ const StyledLink = styled.a`
     text-decoration: underline;}
 `
 
-const Card = ({
-  title,
-  description,
-  url,
-  image,
-  alt,
-  }:{
+const Card = ({title, description, url, image, alt,}:{         
   title: string;
   description: string;
   url: string;
   image: any;
   alt: string;
   }) => (
-  <StyledContainer>
-    <StyledPhoto
-      src={ImageMap.get(image)}
-      alt={alt}
-    />
-    <Title>
-      <StyledLink
-        href={url}
-        target='_blank'
-        rel="noopener"
-      >
-        {title}
-      </StyledLink>
-    </Title>
-    <Description>{description}</Description>
-  </StyledContainer>
+    <StyledContainer>
+      <StyledPhoto
+        src={ImageMap.get(image)}
+        alt={alt}
+      />
+      <Title>
+        <StyledLink
+          href={url}
+          target='_blank'
+          rel="noopener"
+        >
+          {title}
+        </StyledLink>
+      </Title>
+      <Description>{description}</Description>
+    </StyledContainer>
 )
 
 export default Card
