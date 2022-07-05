@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import {Project} from '../../types/project'
+import { Project } from '../../types/project'
+import { projectList } from '../../data/projects'
 import Card from '../../components/card/card';
 import styled from 'styled-components';
 
@@ -17,8 +18,8 @@ const CardArray = () => {
 
   useEffect(() => {
     getProjects()
-      .then(projects => {
-        setProjects(projects)
+      .then(p => {
+        setProjects(p)
       })
   }, []) // eslint-disable-line
 
@@ -36,7 +37,7 @@ const CardArray = () => {
   
   return(
     <StyledGrid>
-      {projects.map((project) => {
+      {projectList.map((project) => {
         return (
           <Card
             title={project.name}
