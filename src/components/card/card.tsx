@@ -1,19 +1,20 @@
+import {ImageMap} from '../../data/imageMap'
 import styled from 'styled-components'
-import {ImageMap} from './data/imageMap'
 
 const StyledContainer = styled.div`
   border: ${(props) => `1px solid green`};
   padding: 25px 12px 18px;
   background: ${(props) => `linear-gradient(
-    45deg, #32cd32 , #F5F5F5
+    45deg, #31a66b  , #31a66b
   )`};
   width: 300px;
   height: 450px;
   margin: 20px;
+  border-radius: 25px;
 `
 const Title = styled.h2`
   color: #fff;
-  font-weight: 200;
+  font-weight: 500;
   @media (max-width: 250px) {
     font-size: 1rem;
   }
@@ -22,16 +23,17 @@ const Title = styled.h2`
 `
 const Description = styled.p`
   color: #fff;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 1.25rem;
   @media (max-width: 250px) {
-    font-size: 0.25rem;
+    font-size: .75rem;
   }
   margin-bottom: 4px;
 `
 
 const StyledPhoto = styled.img`
   width: 100%;
-  
+  border-radius: 25px;
   object-fit: cover;
   border: ${(props) => `1px solid black`};
 `
