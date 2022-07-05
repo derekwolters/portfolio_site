@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const StyledContainer = styled.div`
   border: ${(props) => `1px solid green`};
-  padding: 25px 12px 18px;
+  padding: 12px 12px 18px;
   background: ${(props) => `linear-gradient(
     45deg, #31a66b  , #31a66b
   )`};
   width: 300px;
-  height: 450px;
+  height: 350px;
   margin: 20px;
   border-radius: 25px;
 `
@@ -32,6 +32,7 @@ const Description = styled.p`
 `
 
 const StyledPhoto = styled.img`
+  height: 160px;
   width: 100%;
   border-radius: 25px;
   object-fit: cover;

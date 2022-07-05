@@ -9,6 +9,7 @@ const StyledGrid = styled.div`
   display: flex;  
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 100vh;
 `
 
 const CardArray = () => {
