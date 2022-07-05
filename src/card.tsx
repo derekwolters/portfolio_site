@@ -1,14 +1,10 @@
-import { React } from 'react'
 import styled from 'styled-components'
+import {ImageMap} from './data/imageMap'
 
-let imageMap = {
-  meridityImage: {
-    src: require("./site_images/meridity.png")
-  },
-  handheldSpecs1Image: {
-    src: require("./site_images/handheld_specs_1.png")
-  },
-}
+/* const imageMap = new Map<string, string> ([
+  ["meridityImage", require("./site_images/meridity.png")],
+  ["handheldSpecs1Image", require("./site_images/handheld_specs_1.png")]
+]) */
 
 const StyledContainer = styled.div`
   border: ${(props) => `1px solid green`};
@@ -62,14 +58,16 @@ const Card = ({
   url,
   image,
   alt,
-  comments,
-  likes,
-  views,
-  actions,
-}) => (
+  }:{
+  title: string;
+  description: string;
+  url: string;
+  image: any;
+  alt: string;
+  }) => (
   <StyledContainer>
     <StyledPhoto
-      src={imageMap[image].src}
+      src={ImageMap.get(image)}
       alt={alt}
     />
     <Title>
