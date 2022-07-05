@@ -1,14 +1,10 @@
+import { useState, useEffect } from 'react';
 import logo from './site_images/meridity_logo.png';
 import './App.css';
 import { Draggable } from 'drag-react';
 import Card from './card';
 import styled from 'styled-components';
-import { getProjects } from './api';
-import { React, useState, useEffect } from 'react';
-
-/* const StyledRoot = styled.div`
-  padding: 50px 12px;
-` */
+import {Project} from './types/project'
 
 const StyledContainer = styled.div`
   max-width: 250px;
@@ -18,16 +14,22 @@ const StyledContainer = styled.div`
 `
 
 function App() {
-  const [projects, setProjects] = useState(null)
+  const [projects, setProjects] = useState<Project[]>([])
 
   useEffect(() => {
-    const doGetProjects = async () => {
-      const result = await getProjects();
-      setProjects(result);
-    };
-    console.log('projects', projects)
-    doGetProjects();
+    getProjects()
+      .then(projects => {
+        setProjects(projects)
+      })
   }, []) // eslint-disable-line
+
+  function getProjects(): Promise<Project[]> {
+    return fetch('http://localhost:3000/projects')
+      .then(res => res.json())
+      .then(res => {
+        return res as Project[]
+      })
+}
 
   if (!projects) {
     return null;
