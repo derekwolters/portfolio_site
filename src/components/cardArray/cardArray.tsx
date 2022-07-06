@@ -17,18 +17,17 @@ const CardArray = () => {
   const [projects, setProjects] = useState<Project[]>([])
 
   useEffect(() => {
-    getProjects()
+    setProjects(projectList)
+    /* getProjects()
       .then(p => {
         setProjects(p)
-      })
+      }) */
   }, []) // eslint-disable-line
 
   function getProjects(): Promise<Project[]> {
     return fetch('http://localhost:3000/projects')
       .then(res => res.json())
-      .then(res => {
-        return res as Project[]
-      })
+      .then(res => res as Project[])
 }
 
   if (!projects) {
@@ -37,7 +36,7 @@ const CardArray = () => {
   
   return(
     <StyledGrid>
-      {projectList.map((project) => {
+      {projects.map((project) => {
         return (
           <Card
             title={project.name}
