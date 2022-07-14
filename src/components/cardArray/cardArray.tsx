@@ -24,11 +24,11 @@ const CardArray = () => {
       }) */
   }, []) // eslint-disable-line
 
-  function getProjects(): Promise<Project[]> {
+  /* function getProjects(): Promise<Project[]> {
     return fetch('http://localhost:3000/projects')
       .then(res => res.json())
       .then(res => res as Project[])
-}
+  } */
 
   if (!projects) {
     return null;
