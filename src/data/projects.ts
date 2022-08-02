@@ -18,8 +18,8 @@ export const projectList = [
   {
     "id": 3,
     "name": "Gaming Handheld List 2",
-    "description": "Reiteration of the Handheld gaming consoles list",
-    "url": "",
+    "description": "Reiteration of the Handheld gaming consoles list *UNDER CONSTRUCTION* ",
+    "url": "https://handheldspecs2.netlify.app/",
     "image": "handheldSpecs2Image",
     "alt": "Image of second handheld spec website"
   }
