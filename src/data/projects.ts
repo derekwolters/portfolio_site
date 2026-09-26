@@ -27,7 +27,7 @@ export const projectList = [
     "id": 4,
     "name": "Worksite Clinic Ops Dashboard",
     "description": "Interactive operations dashboard for clinic workload, staffing, and supply planning.",
-    "url": "/clinicDashbard",
+    "url": "/clinicdashboard",
     "image": "meridityImage",
     "alt": "Preview card for Worksite Clinic Ops dashboard"
   }
