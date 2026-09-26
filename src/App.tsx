@@ -14,11 +14,6 @@ const Content = styled.main`
 `
 
 function App() {
-  if (window.location.pathname.toLowerCase() === '/clinicdashboard') {
-    window.location.replace('/clinicdashboard/');
-    return null;
-  }
-
   return (
     <StyledApp>
       <Header/>
