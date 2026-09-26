@@ -22,5 +22,13 @@ export const projectList = [
     "url": "https://handheldspecs2.netlify.app/",
     "image": "handheldSpecs2Image",
     "alt": "Image of second handheld spec website"
+  },
+  {
+    "id": 4,
+    "name": "Worksite Clinic Ops Dashboard",
+    "description": "Interactive operations dashboard for clinic workload, staffing, and supply planning.",
+    "url": "/clinicDashbard",
+    "image": "meridityImage",
+    "alt": "Preview card for Worksite Clinic Ops dashboard"
   }
 ]
