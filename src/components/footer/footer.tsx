@@ -1,19 +1,26 @@
 import styled from 'styled-components';
 
-const StyledFooter = styled.header`
-  background-color: #D4D4D4;
-  min-height: 100vh;
+const StyledFooter = styled.footer`
+  border-top: 1px solid var(--line);
+  color: var(--quiet-ink);
   display: flex;
-  flex-direction: column;
+  font-family: var(--font-body);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  margin: 2rem auto 0;
+  min-height: 120px;
+  padding: 1.25rem;
+  text-align: center;
+`
+
+const Accent = styled.span`
+  color: var(--teal);
+  font-weight: 600;
 `
 
 const Footer = () => (     
   <StyledFooter>
-    Made by Derek
+    Built by Derek. <Accent>Always iterating, always shipping.</Accent>
   </StyledFooter>
 )
 
