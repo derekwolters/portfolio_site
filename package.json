@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "eleventy --serve",
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "prebuild": "node scripts/update-screenshots.js",
+    "build": "eleventy",
+    "screenshots:refresh": "node scripts/update-screenshots.js --force"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6"
