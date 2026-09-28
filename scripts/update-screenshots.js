@@ -36,6 +36,10 @@ async function fetchScreenshot(url) {
   apiUrl.searchParams.set("viewport.deviceScaleFactor", "1");
   apiUrl.searchParams.set("screenshot.type", "jpeg");
   apiUrl.searchParams.set("screenshot.quality", "80");
+  // Bypass Microlink's own response cache. We only call this endpoint when
+  // we've already decided we want a new image (missing file or --force), so
+  // a cached capture from a bad run (e.g. mid-deploy) should never win.
+  apiUrl.searchParams.set("force", "true");
 
   const headers = {};
   if (process.env.MICROLINK_API_KEY) {
