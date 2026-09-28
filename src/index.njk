@@ -1,0 +1,48 @@
+---
+layout: base.njk
+---
+<div class="app">
+  <header class="hero">
+    <div class="hero-panel">
+      <img class="hero-logo" src="/images/brand-logo-small-no-background-no-header.webp" alt="Meridity logo" />
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="headline">Crafting useful web experiences with personality.</h1>
+      <p class="tagline">
+        I design and build practical products with crisp interfaces, clear structure,
+        and an eye for details that make software feel alive.
+      </p>
+      <a class="cta" href="#projects">Explore Projects</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="projects" id="projects">
+      <div class="projects-intro">
+        <h2 class="projects-title">Selected Work</h2>
+        <p class="projects-subtitle">
+          A focused set of builds spanning company presence, hobby projects,
+          and iterative product experiments.
+        </p>
+      </div>
+      <div class="projects-grid">
+        {% for project in projects %}
+        <div class="card">
+          <img class="card-photo" src="{{ project.image }}" alt="{{ project.alt }}" />
+          <div class="card-meta">
+            <h2 class="card-title">
+              <a class="card-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+                {{ project.name }}
+              </a>
+            </h2>
+            <p class="card-description">{{ project.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      Built by Derek. <span class="accent">Always iterating, always shipping.</span>
+    </footer>
+  </main>
+</div>
