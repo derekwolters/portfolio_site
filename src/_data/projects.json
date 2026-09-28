@@ -1,10 +1,10 @@
-export const projectList = [
+[
   {
     "id": 1,
     "name": "Worksite Clinic Ops Dashboard",
     "description": "Interactive operations dashboard for clinic workload, staffing, and supply planning.",
     "url": "/clinicdashboard",
-    "image": "clinicDashboardPreviewImage",
+    "image": "/images/clinic_dashboard_preview.png",
     "alt": "Preview image of Worksite Clinic Ops dashboard"
   },
   {
@@ -12,7 +12,7 @@ export const projectList = [
     "name": "Company Website",
     "description": "My company website",
     "url": "https://www.meridity.com",
-    "image": "meridityImage",
+    "image": "/images/meridity.png",
     "alt": "Image of Meridity website"
   },
   {
@@ -20,7 +20,7 @@ export const projectList = [
     "name": "Gaming Handheld List 1",
     "description": "Handheld gaming consoles list",
     "url": "https://handheldspecs.netlify.app/",
-    "image": "handheldSpecs1Image",
+    "image": "/images/handheld_specs_1.png",
     "alt": "Image of first handheld spec website"
   },
   {
@@ -28,7 +28,7 @@ export const projectList = [
     "name": "Gaming Handheld List 2",
     "description": "Reiteration of the Handheld gaming consoles list *UNDER CONSTRUCTION* ",
     "url": "https://handheldspecs2.netlify.app/",
-    "image": "handheldSpecs2Image",
+    "image": "/images/handheld_specs_2.png",
     "alt": "Image of second handheld spec website"
   }
 ]
