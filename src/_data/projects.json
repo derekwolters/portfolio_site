@@ -17,6 +17,14 @@
   },
   {
     "id": 3,
+    "name": "Tech Week GR Event Schedule Builder",
+    "description": "Event schedule builder for Tech Week GR",
+    "url": "https://techweekgrplanner.meridity.com/",
+    "image": "/images/projectPreviews/tech-week-gr-event-schedule-builder.jpg",
+    "alt": "Image of Tech Week GR Event Schedule Builder website"
+  },
+  {
+    "id": 4,
     "name": "Gaming Handheld List 1",
     "description": "Handheld gaming consoles list",
     "url": "https://handheldspecs.netlify.app/",
