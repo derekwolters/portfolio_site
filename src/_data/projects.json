@@ -22,13 +22,5 @@
     "url": "https://handheldspecs.netlify.app/",
     "image": "/images/projectPreviews/gaming-handheld-list-1.jpg",
     "alt": "Image of first handheld spec website"
-  },
-  {
-    "id": 4,
-    "name": "Gaming Handheld List 2",
-    "description": "Reiteration of the Handheld gaming consoles list *UNDER CONSTRUCTION* ",
-    "url": "https://handheldspecs2.netlify.app/",
-    "image": "/images/projectPreviews/gaming-handheld-list-2.jpg",
-    "alt": "Image of second handheld spec website"
   }
 ]
