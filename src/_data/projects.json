@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "name": "Prothromin Gene Mutation",
+    "description": "Information about the Prothromin gene mutation",
+    "url": "https://prothrombinproject.org/",
+    "image": "/images/projectPreviews/prothromin-gene-mutation.jpg",
+    "alt": "Image of Prothromin Gene Mutation website"
+  },
+  {
+    "id": 2,
     "name": "Worksite Clinic Ops Dashboard",
     "description": "Interactive operations dashboard for clinic workload, staffing, and supply planning.",
     "url": "/clinicdashboard",
@@ -8,7 +16,7 @@
     "alt": "Preview image of Worksite Clinic Ops dashboard"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Company Website",
     "description": "My company website",
     "url": "https://www.meridity.com",
@@ -16,7 +24,7 @@
     "alt": "Image of Meridity website"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Tech Week GR Event Schedule Builder",
     "description": "Event schedule builder for Tech Week GR",
     "url": "https://techweekgrplanner.meridity.com/",
@@ -24,11 +32,11 @@
     "alt": "Image of Tech Week GR Event Schedule Builder website"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Gaming Handheld List 1",
     "description": "Handheld gaming consoles list",
     "url": "https://handheldspecs.netlify.app/",
     "image": "/images/projectPreviews/gaming-handheld-list-1.jpg",
     "alt": "Image of first handheld spec website"
-  }
+  }  
 ]
